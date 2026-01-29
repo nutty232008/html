@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าโหดๆ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .flash {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            color: lime;
+            animation: flash 0.1s infinite alternate;
+        }
+
+        @keyframes flash {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .glitch {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            color: lime;
+            text-shadow: 0 0 5px lime, 0 0 10px lime, 0 0 15px lime;
+            animation: glitch 0.1s infinite alternate;
+        }
+
+        @keyframes glitch {
+            0% {
+                transform: translate(-50%, -50%) skew(0deg);
+            }
